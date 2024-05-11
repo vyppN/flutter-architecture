@@ -1,0 +1,9 @@
+name: my_shop
+
+ide:
+  intellij:
+    moduleNamePrefix: 'shop_'
+
+packages:
+  - apps/**
+  - packages/**

@@ -1,0 +1,6 @@
+# melos_managed_dependency_overrides: core_ui,core_libs
+dependency_overrides:
+  core_libs:
+    path: ../../packages/core_libs
+  core_ui:
+    path: ../../packages/core_ui
