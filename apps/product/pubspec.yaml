@@ -17,6 +17,7 @@ dependencies:
     path: ../../packages/core_libs
   core_ui:
     path: ../../packages/core_ui
+  go_router: ^14.1.0
 
 dev_dependencies:
   flutter_test:
