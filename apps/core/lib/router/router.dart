@@ -17,7 +17,12 @@ final router = GoRouter(routes: [
       ));
     },
       routes: [
-        GoRoute(path: '/', name: 'home', builder: (context, state) => const ProductHomePage(),)
+        GoRoute(
+          path: '/',
+          name: 'home',
+          builder: (context, state) => const ProductHomePage(),
+        )
       ]
-  )
+  ),
+  ...productRoutes,
 ]);
