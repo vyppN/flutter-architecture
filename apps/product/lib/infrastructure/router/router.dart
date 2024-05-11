@@ -6,6 +6,7 @@ import 'package:product/features/home/presentation/screens/product_detail_screen
 final productRoutes = [
   GoRoute(
     path: 'detail',
+    name: 'detail',
     builder: (context, state) {
       final product = state.extra as ProductToDisplay;
       return ProductDetailScreen(product: product,);

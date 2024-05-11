@@ -53,7 +53,7 @@ class _ProductHomePageState extends State<ProductHomePage> {
   }
 
   void onSelectProduct(ProductToDisplay product) {
-    context.go('/detail', extra: product);
+    context.pushNamed('detail', extra: product);
   }
 
   @override

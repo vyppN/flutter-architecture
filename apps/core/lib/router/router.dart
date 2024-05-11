@@ -5,7 +5,8 @@ import 'package:product/infrastructure/router/router.dart';
 final router = GoRouter(routes: [
   GoRoute(
     path: '/',
+    name: 'home',
     builder: (context, state) => const ProductHomePage(),
     routes: productRoutes
-  )
+  ),
 ]);
