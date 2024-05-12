@@ -18,6 +18,8 @@ dependencies:
   product:
     path: ../product
   go_router: ^14.1.0
+  riverpod: ^2.5.1
+  flutter_riverpod: ^2.5.1
 
 dev_dependencies:
   flutter_test:

@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:product/features/home/domain/entities/product.dart';
+import 'package:product/features/home/presentation/viewmodels/home_viewmodel.dart';
 import 'package:product/features/home/presentation/widgets/product_card.dart';
 
 typedef OnSelectProduct = Function(ProductToDisplay product);
 
-class ProductList extends StatelessWidget {
+class ProductList extends ConsumerWidget {
   final List<ProductToDisplay> products;
-  final OnSelectProduct? onSelectProduct;
 
-  const ProductList({super.key, required this.products, this.onSelectProduct});
+  const ProductList({super.key, required this.products});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final homeVMNotifier = ref.read(homeViewModelProvider.notifier);
+
     return SizedBox(
       height: 220,
       width: MediaQuery.of(context).size.width,
@@ -23,7 +26,11 @@ class ProductList extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           itemCount: products.length,
           itemBuilder: (context, index) {
-            return ProductCard(key: UniqueKey(), product: products[index],onTap: onSelectProduct,);
+            return ProductCard(
+              key: UniqueKey(),
+              product: products[index],
+              onTap: (product) => homeVMNotifier.onSelectProduct(context, product),
+            );
           },
       ),
     );
