@@ -33,3 +33,24 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Oswald
+      fonts:
+        - asset: assets/fonts/Oswald-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Oswald-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Oswald-Regular.ttf
+        - asset: assets/fonts/Oswald-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Oswald-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Oswald-Bold.ttf
+          weight: 800
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Montserrat-Italic.ttf
+          style: italic
