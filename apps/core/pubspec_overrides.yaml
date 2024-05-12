@@ -1,4 +1,4 @@
-# melos_managed_dependency_overrides: product,core_ui,core_libs
+# melos_managed_dependency_overrides: product,core_ui,core_libs,user
 dependency_overrides:
   core_libs:
     path: ../../packages/core_libs
@@ -6,3 +6,5 @@ dependency_overrides:
     path: ../../packages/core_ui
   product:
     path: ../product
+  user:
+    path: ../user

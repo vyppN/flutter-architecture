@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/packages/core_libs/shop_core_libs.iml" filepath="$PROJECT_DIR$/packages/core_libs/shop_core_libs.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/core_ui/shop_core_ui.iml" filepath="$PROJECT_DIR$/packages/core_ui/shop_core_ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/apps/product/shop_product.iml" filepath="$PROJECT_DIR$/apps/product/shop_product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apps/user/shop_user.iml" filepath="$PROJECT_DIR$/apps/user/shop_user.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop_my_shop.iml" filepath="$PROJECT_DIR$/shop_my_shop.iml" />
     </modules>
   </component>

@@ -17,6 +17,9 @@ dependencies:
     path: ../../packages/core_libs
   product:
     path: ../product
+  user:
+    path: ../user
+
   go_router: ^14.1.0
   riverpod: ^2.5.1
   flutter_riverpod: ^2.5.1

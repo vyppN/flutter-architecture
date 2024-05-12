@@ -1,15 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:core_libs/dependency_injection/get_it.dart';
-import 'package:product/features/home/domain/entities/product.dart';
-import 'package:product/features/home/domain/port/product/service.dart';
-import 'package:product/features/home/presentation/viewmodels/home_viewmodel.dart';
-import 'package:product/features/home/presentation/widgets/home_jumbotron.dart';
 import 'package:core_ui/widgets/compounds/loading/loading_indicator.dart';
 import 'package:core_ui/widgets/compounds/navbar/home_nav.dart';
-import 'package:product/features/home/presentation/widgets/catalog.dart';
-import 'package:product/mocks/products.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:product/features/home/presentation/viewmodels/home_viewmodel.dart';
+import 'package:product/features/home/presentation/widgets/catalog.dart';
+import 'package:product/features/home/presentation/widgets/home_jumbotron.dart';
+import 'package:product/mocks/products.dart';
 
 class ProductHomePage extends ConsumerStatefulWidget {
   const ProductHomePage({super.key});

@@ -3,10 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:product/features/home/presentation/screens/home_screen.dart';
 import 'package:product/infrastructure/router/router.dart';
+import 'package:user/user_screen.dart';
 
 final routes = [
-  'home'
+  'home',
+  'user'
 ];
+
+
 
 final router = GoRouter(routes: [
   ShellRoute(
@@ -20,9 +24,14 @@ final router = GoRouter(routes: [
         GoRoute(
           path: '/',
           name: 'home',
-          builder: (context, state) => const ProductHomePage(),
+          pageBuilder: (context, state) => const NoTransitionPage(child: ProductHomePage()),
+        ),
+        GoRoute(
+          path: '/user',
+          name: 'user',
+          pageBuilder: (context, state) => const NoTransitionPage(child: UserScreen()),
         )
       ]
   ),
-  ...productRoutes,
+  ...productRoutesForRoot,
 ]);
