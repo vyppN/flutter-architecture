@@ -14,21 +14,23 @@ class HomeNavbar extends ConsumerWidget {
     final themeProvider = ref.watch(appThemeProvider);
 
     return  Container(
-      color:Colors.black,
+      color:themeProvider.themeColor.backgroundPrimary,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+
             const Expanded(child: SearchInput()),
+
             IconButton(
                 onPressed: themeNotifier.switchTheme,
                 icon: Icon(
                   themeProvider.selectedTheme == Themes.light
                    ? Icons.dark_mode
                    : Icons.light_mode,
-                  color: Colors.white,
+                  color: themeProvider.themeColor.text,
                   size: 40,
                 )
             ),
