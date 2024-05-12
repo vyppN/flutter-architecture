@@ -6,6 +6,7 @@ import 'package:product/features/home/presentation/viewmodels/home_viewmodel.dar
 import 'package:product/features/home/presentation/widgets/catalog.dart';
 import 'package:product/features/home/presentation/widgets/home_jumbotron.dart';
 import 'package:product/mocks/products.dart';
+import 'package:core_ui/theme/theme_provider.dart';
 
 class ProductHomePage extends ConsumerStatefulWidget {
   const ProductHomePage({super.key});
@@ -27,9 +28,10 @@ class _ProductHomePageState extends ConsumerState<ProductHomePage> {
   @override
   Widget build(BuildContext context) {
     final homeVM = ref.watch(homeViewModelProvider);
+    final color = ref.watch(appThemeProvider).themeColor;
 
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: color.backgroundPrimary,
         body: SafeArea(
           child: Column(
             children: [

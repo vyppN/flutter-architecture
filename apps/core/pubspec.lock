@@ -105,7 +105,7 @@ packages:
     source: path
     version: "0.0.1"
   core_ui:
-    dependency: "direct overridden"
+    dependency: "direct main"
     description:
       path: "../../packages/core_ui"
       relative: true
