@@ -1,0 +1,113 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "flutter-architecture ",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "core",
+            "cwd": "apps/core",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "core (profile mode)",
+            "cwd": "apps/core",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "core (release mode)",
+            "cwd": "apps/core",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "product",
+            "cwd": "apps/product",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "product (profile mode)",
+            "cwd": "apps/product",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "product (release mode)",
+            "cwd": "apps/product",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "user",
+            "cwd": "apps/user",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "user (profile mode)",
+            "cwd": "apps/user",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "user (release mode)",
+            "cwd": "apps/user",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "core_libs",
+            "cwd": "packages/core_libs",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "core_libs (profile mode)",
+            "cwd": "packages/core_libs",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "core_libs (release mode)",
+            "cwd": "packages/core_libs",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "core_ui",
+            "cwd": "packages/core_ui",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "core_ui (profile mode)",
+            "cwd": "packages/core_ui",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "core_ui (release mode)",
+            "cwd": "packages/core_ui",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
